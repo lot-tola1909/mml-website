@@ -1,0 +1,134 @@
+/* Resetting Rule */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+body{
+  background-color: #FBFBFB;
+  font-family: "Ubuntu";
+  color: #000101;
+}
+
+/* Navigation Bar */
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.navbar .logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.navbar .nav-items {
+  display: flex;
+  margin: 30px;
+  width: 700px;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.navbar .nav-items li a{
+  text-decoration: none;
+  color: #2A70B9;
+  padding: 15px 25px;
+  transition: background-color 0.3s ease-in;
+  border-radius: 10px;
+}
+.navbar .nav-items li a:hover{
+  background-color: #2A70B9;
+  color: #FBFBFB;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #D3D3D3;
+  transform: translate(-25px, -25px);
+}
+
+.navbar .cta-btn {
+  margin-right: 50px;
+  padding: 10px 20px;
+  border: 2px solid #2A70B9;
+  border-radius: 10px;
+  color: #2A70B9;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in;
+
+}
+.navbar .cta-btn:hover {
+  border-radius: 10px;
+  color: #FBFBFB;
+  background-color: #2A70B9;
+  box-shadow: 5px 5px 5px #D3D3D3;
+}
+
+.navbar .company-name{
+  font-weight: bold;
+  margin-top: 10px;
+  letter-spacing: 1.3px;
+}
+
+
+/* Main Content */
+.landing-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+}
+.landing-section .slogan{
+  font-size: 8rem;
+  font-style: italic;
+  max-width: 75%;
+  font-weight: 700;
+
+
+}
+.landing-section .slogan .slogan-1{
+  color: #173B63;
+}
+
+.landing-section .slogan .slogan-2{
+  color: #2B70BA;
+}
+
+.landing-section .sub-slogan{
+  margin-top: 50px;
+  letter-spacing: 1px;
+}
+
+.landing-section .sub-slogan .sub-slogan-hightlight{
+  color: #2B70BA;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+
+/* Bubble Design */
+
+.biggest-ellipse {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+}
+.second-large-ellipse{
+  position: absolute;
+  right: 0%;
+  top: 10%;
+}
+.third-large-ellipse{
+  position: absolute;
+  right: 0%;
+  bottom: -9%;
+}
+.smallest-ellipse{
+  position: absolute;
+  right: 10%;
+  bottom: 9%;
+}
+
