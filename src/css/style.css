@@ -3,26 +3,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
-body{
-  background-color: #FBFBFB;
+}
+
+body {
+  background-color: #fbfbfb;
   font-family: "Ubuntu";
   color: #000101;
 }
 
 /* Navigation Bar */
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
 
-.navbar .logo{
+.navbar .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .navbar .nav-items {
@@ -33,102 +33,302 @@ body{
   align-items: center;
   list-style: none;
 }
-.navbar .nav-items li a{
+
+.navbar .nav-items li a {
   text-decoration: none;
-  color: #2A70B9;
+  color: #000101;
   padding: 15px 25px;
   transition: background-color 0.3s ease-in;
   border-radius: 10px;
 }
-.navbar .nav-items li a:hover{
-  background-color: #2A70B9;
-  color: #FBFBFB;
+
+.navbar .nav-items li a:hover {
+  background-color: #2a70b9;
+  color: #fbfbfb;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px #D3D3D3;
+  box-shadow: 5px 5px 5px #d3d3d3;
   transform: translate(-25px, -25px);
 }
 
 .navbar .cta-btn {
   margin-right: 50px;
   padding: 10px 20px;
-  border: 2px solid #2A70B9;
+  border: 2px solid #2a70b9;
   border-radius: 10px;
-  color: #2A70B9;
+  color: #2a70b9;
   font-weight: bold;
   transition: background-color 0.3s ease-in;
-
 }
+
 .navbar .cta-btn:hover {
   border-radius: 10px;
-  color: #FBFBFB;
-  background-color: #2A70B9;
-  box-shadow: 5px 5px 5px #D3D3D3;
+  color: #fbfbfb;
+  background-color: #2a70b9;
+  box-shadow: 5px 5px 5px #d3d3d3;
 }
 
-.navbar .company-name{
+.navbar .company-name {
   font-weight: bold;
   margin-top: 10px;
   letter-spacing: 1.3px;
 }
 
-
 /* Main Content */
 .landing-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
-  height: 80vh;
-  position: relative;
-}
-.landing-section .slogan{
-  font-size: 8rem;
-  font-style: italic;
-  max-width: 75%;
-  font-weight: 700;
-
-
-}
-.landing-section .slogan .slogan-1{
-  color: #173B63;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/test-bg.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
 }
 
-.landing-section .slogan .slogan-2{
-  color: #2B70BA;
+/* Animating Slogan */
+.carousel {
+  display: flex;
+  width: 100vw;
+  margin-top: 200px;
 }
 
-.landing-section .sub-slogan{
-  margin-top: 50px;
-  letter-spacing: 1px;
+.group {
+  display: flex;
+  will-change: transform;
+  animation: scrolling 15s linear infinite;
 }
 
-.landing-section .sub-slogan .sub-slogan-hightlight{
-  color: #2B70BA;
-  font-style: italic;
+.group > * {
+  margin-right: 20px;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Sub slogan section */
+.sub-slogan {
+  margin-top: 100px;
+  color: #2b70ba;
+  font-size: 3rem;
+  width: 100vw;
+  height: fit-content;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-top: 20px;
+  padding-bottom: 20px;
   letter-spacing: 2px;
+  line-height: 5rem;
 }
 
-
-/* Bubble Design */
-
-.biggest-ellipse {
-  position: absolute;
-  left: 0%;
-  top: 50%;
-}
-.second-large-ellipse{
-  position: absolute;
-  right: 0%;
-  top: 10%;
-}
-.third-large-ellipse{
-  position: absolute;
-  right: 0%;
-  bottom: -9%;
-}
-.smallest-ellipse{
-  position: absolute;
-  right: 10%;
-  bottom: 9%;
+.sub-slogan--highlight {
+  color: #173b63;
+  font-style: italic;
 }
 
+/* Footer section */
+.footer {
+  display: flex;
+  background-color: #112a46;
+  width: 100vw;
+  height: 399px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+}
+
+.footer-content > * {
+  margin-right: 30px;
+}
+
+.quick-links {
+  list-style: none;
+
+  color: #fbfbfb;
+}
+
+.quick-links p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.quick-links li {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.quick-links a {
+  text-decoration: none;
+}
+
+.quick-links a:visited {
+  color: #fbfbfb;
+}
+
+.contact-info {
+  height: 164px;
+}
+
+.contact-info p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.contact-info-1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-info-1-item1 {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-1-item2 {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-1-item3 {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-1 a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+}
+
+.contact-info-1 a:visited {
+  color: white;
+}
+
+.contact-info-2-item1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.address {
+  width: 266px;
+}
+
+.address > p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.address-content-info {
+  margin-top: 11px;
+  line-height: 25px;
+}
+
+.embed-map {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* About Section */
+/* Who are we  */
+.about-section {
+  width: 100vw;
+  overflow-x: hidden;
+  background-image: linear-gradient(to bottom, white, #98b8fd);
+}
+
+.who-are-we {
+  width: 1382px;
+  height: 702px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+  background-color: #173b63;
+  color: white;
+  border-radius: 15px;
+}
+
+.who-are-we > h1 {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 8px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.who-are-we-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.who-are-we-content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.who-are-we-content-item > img {
+  margin-bottom: 15px;
+}
+
+.who-are-we-content-item > p {
+  text-align: left;
+  letter-spacing: 0.9px;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+.second-carousel {
+  display: flex;
+}
+
+.second-carousel:hover > .second-group {
+  animation-play-state: paused;
+}
+
+.second-group {
+  display: flex;
+  margin-bottom: 50px;
+  will-change: transform;
+  animation: scrolling 15s linear infinite;
+}
+
+.second-group > * {
+  margin-right: 150px;
+  animation-play-state: paused;
+}
+
+/* .mb { */
+/*   margin-top: 10px; */
+/* } */
